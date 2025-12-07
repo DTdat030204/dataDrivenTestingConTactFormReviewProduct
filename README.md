@@ -18,38 +18,48 @@ e‑commerce demo site:
 
 From the repository root:
 
-```powershell
 cd .\LV1_CONTACTFORM_REVIEWPRODUCT\
 
 python -m venv .venv
-.\.venv\Scripts\Activate.ps1
+..venv\Scripts\Activate.ps1
 
 python -m pip install --upgrade pip
 pip install -r requirements.txt
-```
+
+text
 
 If you get an execution policy error when activating the venv:
 
-```powershell
 Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
-```
+
+text
 
 
-## 3. Running the tests
+## 3. ChromeDriver
+
+The tests require Google Chrome and a compatible ChromeDriver:
+
+- Option 1: Put a matching `chromedriver.exe` on your `PATH` (or in this folder).
+- Option 2: Use a driver manager (e.g. `webdriver-manager`) and update the code to create the driver via it.
+
+Make sure the ChromeDriver version matches your installed Chrome, otherwise Selenium may fail to start the browser.
+
+
+## 4. Running the tests
 
 Run Contact Form tests:
 
-```powershell
-cd .\LV1_CONTACTFORM_REVIEWPRODUCT\
+cd .\LV1_CONTACTFORM_REVIEWPRODUCT
 python .\ContactForm.py
-```
+
+text
 
 Run Review Product tests:
 
-```powershell
-cd .\LV1_CONTACTFORM_REVIEWPRODUCT\
+cd .\LV1_CONTACTFORM_REVIEWPRODUCT
 python .\ReviewProduct.py
-```
+
+text
 
 Each script will:
 
@@ -59,7 +69,7 @@ Each script will:
 - Print a colored summary of passed / failed rows and overall pass rate.
 
 
-## 4. Project structure
+## 5. Project structure
 
 - `ContactForm.py`  — Selenium DDT tests for the contact form
 - `ContactForm.csv` — Test data for contact form scenarios
@@ -68,12 +78,12 @@ Each script will:
 - `requirements.txt`  — Python dependencies
 
 
-## 5. Notes & troubleshooting
+## 6. Notes & troubleshooting
 
 - Keep the CSV files together with the Python scripts; they are required for the tests.
 - If you see warnings like Selenium cache folder cannot be created under  
   `C:\Users\<user>\.cache\selenium`, you can:
   - Ignore them if tests still run, or
   - Run PowerShell as Administrator once so Selenium can create the folder.
-- Make sure your Chrome and ChromeDriver versions are compatible.  
-  If you get driver/session errors, update Chrome or ChromeDriver accordingly.
+- If you get driver or session errors, check that your Chrome and ChromeDriver
+  versions are compatible and update one of them if needed.
