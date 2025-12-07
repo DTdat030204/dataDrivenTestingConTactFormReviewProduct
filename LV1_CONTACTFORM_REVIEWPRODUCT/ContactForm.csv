@@ -1,0 +1,16 @@
+yourName,yourEmail,subject,message,expectedResult
+Đạt,tuan@gmail.com,Cộng tác,Chúng tôi muốn cộng tác với công ty ...,No error
+A,tuan@gmail.com,Cộng tác,Chúng tôi muốn cộng tác với công ty ...,Name must be between 3 and 32 characters!
+Đạt,dotuandat.dnghcm@gmail,Cộng tác,Chúng tôi muốn cộng tác với công ty ...,E-Mail Address does not appear to be valid!
+Đạt,tuan@gmail.com,Có,Chúng tôi muốn cộng tác với công ty ...,Subject must be between 3 and 78 characters!
+Đạt,tuan@gmail.com,Cộng tác,Cộng tác,Message must be between 10 and 3000 characters!
+Ly,tuan@gmail.com,Cộng tác,Công ty chúng tôi muốn hợp tác …,Name must be between 3 and 32 characters!
+Đạt,tuan@gmail.com,Cộng tác,Công ty chúng tôi muốn hợp tác …,No error
+Đạt,tuan@gmail.com,Cộng tác,123456789,Message must be between 10 and 3000 characters!
+Đạt,tuan@gmail.com,Cộng tác,1234567890,No error
+Đạt123#,tuan@gmail.com,Cộng tác,Chúng tôi muốn cộng tác với công ty …,No error
+Ly,tuan@gmail.com,Cộng tác,Chúng tôi muốn cộng tác với công ty …,Error at Name
+Đạt123#,tuan@gmailcom,Cộng tác,Chúng tôi muốn cộng tác với công ty …,Error at Email
+Đạt123#,tuan@gmail.com,C,Chúng tôi muốn cộng tác với công ty …,Error at Subject
+Đạt123#,tuan@gmail.com,Cộng tác,Ch###,Error at Message
+"",tuan@gmail.com,Cộng tác,Công ty chúng tôi muốn hợp tác …,Name must be between 3 and 32 characters!

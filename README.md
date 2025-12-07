@@ -18,34 +18,34 @@ e‑commerce demo site:
 
 From this folder:
 
+```powershell
 python -m venv .venv
-..venv\Scripts\Activate.ps1
+.\.venv\Scripts\Activate.ps1
 
 python -m pip install --upgrade pip
 pip install -r requirements.txt
-
-text
+```
 
 If you get an execution policy error when activating the venv:
 
+```powershell
 Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
-
-text
+```
 
 
 ## 3. Running the tests
 
 Run Contact Form tests:
 
+```powershell
 python .\ContactForm.py
-
-text
+```
 
 Run Review Product tests:
 
+```powershell
 python .\ReviewProduct.py
-
-text
+```
 
 Each script will:
 
