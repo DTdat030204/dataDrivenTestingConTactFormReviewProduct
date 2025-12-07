@@ -16,9 +16,11 @@ e‑commerce demo site:
 
 ## 2. Setup (Windows PowerShell)
 
-From this folder:
+From the repository root:
 
 ```powershell
+cd .\LV1_CONTACTFORM_REVIEWPRODUCT\
+
 python -m venv .venv
 .\.venv\Scripts\Activate.ps1
 
@@ -38,12 +40,14 @@ Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
 Run Contact Form tests:
 
 ```powershell
+cd .\LV1_CONTACTFORM_REVIEWPRODUCT\
 python .\ContactForm.py
 ```
 
 Run Review Product tests:
 
 ```powershell
+cd .\LV1_CONTACTFORM_REVIEWPRODUCT\
 python .\ReviewProduct.py
 ```
 
